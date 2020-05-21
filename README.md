@@ -10,10 +10,7 @@ The purpose of this script is to extract search-specific data from the Governmen
 This script uses Pandas (a Python math module) to categorize unaddressed recommendations by month and year and create a bar chart of the time-series data.
 
 Sample web API call:
-https://www.gao.gov/index.php?system_action=newRecommendations_results_as_csv
-&rec_type=all_open
-&field=rectext_t
-&q=acquisition
+https://www.gao.gov/index.php?system_action=newRecommendations_results_as_csv&rec_type=all_open&field=rectext_t&q=acquisition
 
 The above sample API call pulls data on still-open recommendations with the phrase 'acquisition' appearing in the recommendation text.
 
