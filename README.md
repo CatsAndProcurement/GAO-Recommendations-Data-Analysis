@@ -17,4 +17,4 @@ https://www.gao.gov/index.php?system_action=newRecommendations_results_as_csv
 
 The above sample API call pulls data on still-open recommendations with the phrase 'acquisition' appearing in the recommendation text.
 
-Nothing in this script is endorsed by the U.S. government. None of the data that the script might extract is verified by the author; neither raw data nor conclusions drawn from the data should be interpreted as authoritative.
+Nothing in this script is reviewed or endorsed by GAO, the audited agencies, or the U.S. government. None of the data that the script might extract is verified by the author; neither raw data nor conclusions drawn from the data should be interpreted as authoritative.
