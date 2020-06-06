@@ -97,8 +97,8 @@ currentDate = date.today()
 print("\nCalculations based on GAO recommendations that have not reportedly "+
       "been addressed as of "+currentDate.strftime("%B %d, %Y")+".\n")
 
-# Creates a new dataframe that we'll use to chart the FR notices for each
-# YYYY-MM in the date range specified by the user
+# Creates a new dataframe that we'll use to chart the open recommendations for
+# each YYYY-MM in the date range specified by the user
 dfGAOPvt = pd.DataFrame(columns=("Year and Month","Number of Open Recommendations"))
 
 # If earliest year is too early, sets it at 5 years prior to latest year
@@ -129,7 +129,7 @@ for y in range (minYear,maxYear+1):
     for m in range (startMonth,endMonth+1):
         # Creates variable for every YYYY-MM in the target range
         loopYearMonth = str("%04d" % y) + "-" + str("%02d" % m)
-        # Counts the notices for each YYYY-MM variable in the dfFR dataframe
+        # Counts the notices for each YYYY-MM variable in the dfGAO dataframe
         sumYearMonth = dfGAO.loc[dfGAO["Year and Month"] == loopYearMonth,
                                 "Number of Open Recommendations"].sum()
         # Creates a new row to add to the pivot dataframe
